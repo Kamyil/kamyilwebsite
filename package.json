@@ -1,0 +1,19 @@
+{
+  "name": "kamyilwebsite",
+  "version": "1.0.0",
+  "description": "Kamyil's portfolio website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamyil/kamyilwebsite.git"
+  },
+  "author": "Kamil Kamyil Bugajak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kamyil/kamyilwebsite/issues"
+  },
+  "homepage": "https://github.com/Kamyil/kamyilwebsite#readme"
+}
