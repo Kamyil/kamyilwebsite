@@ -80,6 +80,19 @@ box-shadow: 0px 0px 62px -13px rgba(0,0,0,0.75);
     margin-top: 3vh;
     float: left;
     text-align: center;
+#skills-scrollable-left-bar{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+   width: 10vw;
+    
+    overflow-y: auto;
+}
+#skills-scrollable-left-bar:after{
+    background: rgba(20,50,20,0.6);
+
+ 
+}
 
     h1{
         text-align: center;
@@ -89,7 +102,9 @@ box-shadow: 0px 0px 62px -13px rgba(0,0,0,0.75);
     }
 
     h2{
+        color: white;
         font-weight: 300;
+        font-size: 2em;
     }
 
     .icons{
@@ -103,6 +118,26 @@ box-shadow: 0px 0px 62px -13px rgba(0,0,0,0.75);
         position: relative;
         bottom: 0.3%;
         
+    }
+    li{
+        color: white;
+        font-weight: 700;
+        list-style-type: none;
+        text-shadow: 0px 0px 24px rgba(250, 250, 250, 0.3);
+        margin-top: 20%;
+        // background-color: rgba(250,250,250,0.2);
+        display: flex;
+  align-items: center;
+
+    }
+    i{
+        color: white;
+        font-size: 3em;
+        text-shadow: 0px 0px 24px rgba(250, 250, 250, 0.3);
+    }
+    .icon-text{
+        vertical-align:middle;
+        margin-left: 5%;
     }
 }
 
