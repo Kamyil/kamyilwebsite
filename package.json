@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Kamyil/kamyilwebsite/issues"
   },
-  "homepage": "https://github.com/Kamyil/kamyilwebsite#readme"
+  "homepage": "https://github.com/Kamyil/kamyilwebsite#readme",
+  "dependencies": {}
 }

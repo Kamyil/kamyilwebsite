@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title>Kamyil</title>
 </head>
-<body>
+<body class="light-bg">
     <main>
-   
-        <div id="left-bar-container" class="acrylic shadow">
+  
+
+        <div id="left-bar-container" class="acrylic shadow fade-in" style="display: block">
 
             <h1>Kamil Bugajak</h1>
             <h2>front-end developer</h2>
@@ -20,45 +23,37 @@
             <h2>UI/UX designer</h2>
             <h2>photographer</h2>
 
-            <button>Bio <span>></span></button>
-            <button>Skills <span>></span></button>
-            <button>Experience<span>></span></button>
-            <button>Projects<span>></span></button>
-            <button>Text me<span>></span></button>
+            <button class="light-btn" id="bio-btn">Bio <span>></span></button>
+            <button class="light-btn" id="skills-btn">Skills <span>></span></button>
+            <button class="light-btn" id="projects-btn">Projects<span>></span></button>
+            <button class="light-btn" id="text-me-btn">Text me<span>></span></button>
 
+            <button id="light-mode">Ciemny Motyw</button>
+            
+        
+             
+          
 
         </div>
+        <button class="interface-show" id="viewToggler"> Hide </button>   
 
 
-        <div id="right-bar-container" class="acrylic shadow">
-            <h1>Skills</h1>
-            <div id="skills-scrollable-left-bar" class="acrylic">
-            <!-- <h2>Photography / Graphic Design / UI&UX Design / Video Editing </h2>
-           
-                <img src="img/photoshop-icon.png" alt="" class="icons">
-                <img src="img/illu-icon.png" alt="" class="icons" id="illu-icon">
-                <img src="img/lightroom-icon.png" alt="" class="icons">
-                <img src="img/premiere-icon.png" alt="" class="icons">
-            <div style="clear: both;"></div> -->
-            <h2>Web Development</h2>
-            <ul>
-                <li><i class="devicon-html5-plain"></i> <span class="icon-text">HTML</span>    </li>
-                <li><i class="devicon-css3-plain"></i><span class="icon-text">CSS</span> </li>
-                <li><i class="devicon-javascript-plain"></i><span class="icon-text">JavaScript (ES6) </span></li>
-                <li><i class="devicon-gulp-plain"></i><span class="icon-text">GULP</span> </li>
-                <li><i class="devicon-github-plain"></i><span class="icon-text">Git/GitHub</span> </li>
-                <li><i class="devicon-nodejs-plain"></i><span class="icon-text">Node (NPM)</span> </li>
-                <li><i class="devicon-atom-original"></i><span class="icon-text">Electron</span> </li>
-                <li><i class="devicon-angularjs-plain"></i><span class="icon-text">Angular </span></li>
-                <li><i class="devicon-angularjs-plain-wordmark"></i><span class="icon-text">AngularJS</span></li>
-                <li><i class="devicon-react-original"></i><span class="icon-text">React</span> </li>
-                <li><i class="devicon-bootstrap-plain"></i><span class="icon-text">Bootstrap</span> </li>
-                <li><i class="devicon-jquery-plain-wordmark"></i><span class="icon-text">JQuery/JQuery UI </span></li>
-                <li><i class="devicon-typescript-plain"></i><span class="icon-text">TypeScript</span> </li>
+        <div id="right-bar-container" class="acrylic shadow fade-in" style="display: block">
 
-            </ul>
+
+            
+      
         </div>
-        </div>
+  
+ 
       </main>
+      <script src="js/dark-mode.js"></script>
+      <script src="js/bio.js"></script>
+      <script src="js/skills.js"></script>
+      <script src="js/change-bg.js"></script>
+      <script src="js/projects.js"></script>
+      <script src="js/textme.js"></script>
+
+
 </body>
 </html>
