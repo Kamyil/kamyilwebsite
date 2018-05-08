@@ -3,8 +3,6 @@
     position: absolute;
     right: 3vw;
     top: 3vh; }
-  #right-bar-container {
-    display: none; }
   #left-bar-container {
     width: 62vw;
     position: relative;
@@ -63,7 +61,9 @@
       top: 12%; }
   #viewToggler {
     left: 44vw;
-    bottom: 10vh; } }
+    bottom: 10vh; }
+  #right-bar-container {
+    display: none; } }
 
 @media only screen and (min-width: 670px) and (max-width: 710px) {
   #left-bar-container {
@@ -73,6 +73,8 @@
       width: 100%;
       margin: 2% auto;
       padding: 4%; }
+  #right-bar-container {
+    display: none; }
   .bio-content p {
     font-size: 105%;
     font-weight: 700; }
@@ -87,6 +89,8 @@
       width: 100%;
       margin: 1% auto;
       padding: 4%; }
+  #right-bar-container {
+    display: none; }
   #viewToggler {
     left: 10vw;
     bottom: 90vh; } }
@@ -103,6 +107,8 @@
       padding: 2%; }
     #left-bar-container img {
       top: 20%; }
+  #right-bar-container {
+    display: none; }
   #viewToggler {
     left: 10vw;
     bottom: 90vh; } }
