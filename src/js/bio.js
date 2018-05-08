@@ -13,47 +13,13 @@ function callBio() {
             left_container.innerHTML = `
         <div class="back"><- Click this text to go Back</div>  <h1 class="bio-title">Bio</h1>
         <div class="bio-content acrylic-dark medium-high shadow fade-in">
-        <p>Informatyką i mediami interesuje się od wczesnego dzieciństwa. 
-            Jako nastolatek lubiłem modować gry, przerabiać tekstury, tworzyć grafiki i filmy oraz 
-            upiększać programy i systemy operacyjne. Ukończyłem Technikum w Sosnowcu i zdobyłem kwalifikację 
-            Fototechnika, który pozwala mi na wykonywanie zawodu w dziedzinie Fotografii, grafiki oraz 
-            projektowania prostych stron WWW. Jednak było to dla mnie za mało. Kiedy mogłoby się wydawać, 
-            że artystyczne kierunki gdzie dominuje abstrakcyjny typ myślenia nie mogą iść w parze z 
-            programowaniem wymagającym logicznego rozumowania - stwierdziłem, że postaram się je złączyć razem. 
-            W ten oto sposób zostałem front-end developerem, który z pasją tworzy strony i aplikacje zawierające 
-            interfejsy piękne a zarazem w pełni funkcjonalne. Chcąc zamienić swoją pracę w możliwość zarobku, 
-            zacząłem od filmowania meczów Zagłębia Sosnowiec dla firmy InStat Football, a później tworzyłem w 
-            ramach pojedynczych zleceń grafiki, zdjęcia i aplikacje internetowe dla różnych firm jako freelancer. 
-            Owoce mojej pracy możesz zobaczyć w zakładce “Projekty”. Prócz mojej artystyczno-programistycznej 
-            działalności, interesuję się również rozwojem osobistym dlatego każdego dnia, staram się poświęcić 
-            czas na rozwój umiejętności miękkich tj. zarządzanie czasem, panowanie nad emocjami, praca w zespole 
-            czy strategiczne myślenie. Obecnie poszukuje nowych wyzwań, dlatego mogę podjąć pracę stacjonarną w 
-            Sosnowcu, Bedzinie, Katowicach i Dąbrowie Górniczej lub zdalnie. Jeżeli jesteś zainteresowany 
-            współpracą ze mną, możesz do mnie napisać klikając w zakładkę “Napisz do mnie” lub na adres: 
-            kkbugajak@gmail.com  :) </p>
+        <p>IT and media had been my passion since i was very young. As a teenager i loved modding video games, making graphics/films and making OSs more beautiful. I finished Technic High School, obtaining the Photo and Media engineer title in the same time, which allows me to work with media projects such as Graphic&UX&UI Designing, making professional photos and creating web apps. I do my work with huge determination, passion and positive attitude. I appreciate working with team. My main and representative advantages are innovative way of creating interfaces and well-educated soft skills. If you want to text me a message, you can do that by e-mail: kkbugajak@gmail.com or by “Text Me” section :)     </p>
         </div>`;
         } else {
             left_container.innerHTML = `
         <div class="back"><- Click this text to go Back</div> <h1 class="bio-title">Bio</h1>
         <div class="bio-content acrylic medium-high shadow fade-in">
-        <p>Informatyką i mediami interesuje się od wczesnego dzieciństwa. 
-            Jako nastolatek lubiłem modować gry, przerabiać tekstury, tworzyć grafiki i filmy oraz 
-            upiększać programy i systemy operacyjne. Ukończyłem Technikum w Sosnowcu i zdobyłem kwalifikację 
-            Fototechnika, który pozwala mi na wykonywanie zawodu w dziedzinie Fotografii, grafiki oraz 
-            projektowania prostych stron WWW. Jednak było to dla mnie za mało. Kiedy mogłoby się wydawać, 
-            że artystyczne kierunki gdzie dominuje abstrakcyjny typ myślenia nie mogą iść w parze z 
-            programowaniem wymagającym logicznego rozumowania - stwierdziłem, że postaram się je złączyć razem. 
-            W ten oto sposób zostałem front-end developerem, który z pasją tworzy strony i aplikacje zawierające 
-            interfejsy piękne a zarazem w pełni funkcjonalne. Chcąc zamienić swoją pracę w możliwość zarobku, 
-            zacząłem od filmowania meczów Zagłębia Sosnowiec dla firmy InStat Football, a później tworzyłem w 
-            ramach pojedynczych zleceń grafiki, zdjęcia i aplikacje internetowe dla różnych firm jako freelancer. 
-            Owoce mojej pracy możesz zobaczyć w zakładce “Projekty”. Prócz mojej artystyczno-programistycznej 
-            działalności, interesuję się również rozwojem osobistym dlatego każdego dnia, staram się poświęcić 
-            czas na rozwój umiejętności miękkich tj. zarządzanie czasem, panowanie nad emocjami, praca w zespole 
-            czy strategiczne myślenie. Obecnie poszukuje nowych wyzwań, dlatego mogę podjąć pracę stacjonarną w 
-            Sosnowcu, Bedzinie, Katowicach i Dąbrowie Górniczej lub zdalnie. Jeżeli jesteś zainteresowany 
-            współpracą ze mną, możesz do mnie napisać klikając w zakładkę “Napisz do mnie” lub na adres: 
-            kkbugajak@gmail.com  :) </p>
+        <p>IT and media had been my passion since i was very young. As a teenager i loved modding video games, making graphics/films and making OSs more beautiful. I finished Technic High School, obtaining the Photo and Media engineer title in the same time, which allows me to work with media projects such as Graphic&UX&UI Designing, making professional photos and creating web apps. I do my work with huge determination, passion and positive attitude. I appreciate working with team. My main and representative advantages are innovative way of creating interfaces and well-educated soft skills. If you want to text me a message, you can do that by e-mail: kkbugajak@gmail.com or by “Text Me” section :)    </p>
         </div>`;
 
         }
@@ -130,47 +96,13 @@ textMeBtn.addEventListener('click',callTextMe);
             content_container.innerHTML = `
         <h1>Bio</h1>
         <div class="bio-content acrylic-dark medium-high shadow fade-in">
-        <p>Informatyką i mediami interesuje się od wczesnego dzieciństwa. 
-            Jako nastolatek lubiłem modować gry, przerabiać tekstury, tworzyć grafiki i filmy oraz 
-            upiększać programy i systemy operacyjne. Ukończyłem Technikum w Sosnowcu i zdobyłem kwalifikację 
-            Fototechnika, który pozwala mi na wykonywanie zawodu w dziedzinie Fotografii, grafiki oraz 
-            projektowania prostych stron WWW. Jednak było to dla mnie za mało. Kiedy mogłoby się wydawać, 
-            że artystyczne kierunki gdzie dominuje abstrakcyjny typ myślenia nie mogą iść w parze z 
-            programowaniem wymagającym logicznego rozumowania - stwierdziłem, że postaram się je złączyć razem. 
-            W ten oto sposób zostałem front-end developerem, który z pasją tworzy strony i aplikacje zawierające 
-            interfejsy piękne a zarazem w pełni funkcjonalne. Chcąc zamienić swoją pracę w możliwość zarobku, 
-            zacząłem od filmowania meczów Zagłębia Sosnowiec dla firmy InStat Football, a później tworzyłem w 
-            ramach pojedynczych zleceń grafiki, zdjęcia i aplikacje internetowe dla różnych firm jako freelancer. 
-            Owoce mojej pracy możesz zobaczyć w zakładce “Projekty”. Prócz mojej artystyczno-programistycznej 
-            działalności, interesuję się również rozwojem osobistym dlatego każdego dnia, staram się poświęcić 
-            czas na rozwój umiejętności miękkich tj. zarządzanie czasem, panowanie nad emocjami, praca w zespole 
-            czy strategiczne myślenie. Obecnie poszukuje nowych wyzwań, dlatego mogę podjąć pracę stacjonarną w 
-            Sosnowcu, Bedzinie, Katowicach i Dąbrowie Górniczej lub zdalnie. Jeżeli jesteś zainteresowany 
-            współpracą ze mną, możesz do mnie napisać klikając w zakładkę “Napisz do mnie” lub na adres: 
-            kkbugajak@gmail.com  :) </p>
+        <p>IT and media had been my passion since i was very young. As a teenager i loved modding video games, making graphics/films and making OSs more beautiful. I finished Technic High School, obtaining the Photo and Media engineer title in the same time, which allows me to work with media projects such as Graphic&UX&UI Designing, making professional photos and creating web apps. I do my work with huge determination, passion and positive attitude. I appreciate working with team. My main and representative advantages are innovative way of creating interfaces and well-educated soft skills. If you want to text me a message, you can do that by e-mail: kkbugajak@gmail.com or by “Text Me” section :)    </p>
         </div>`;
         } else {
             content_container.innerHTML = `
         <h1>Bio</h1>
         <div class="bio-content acrylic medium-high shadow fade-in">
-        <p>Informatyką i mediami interesuje się od wczesnego dzieciństwa. 
-            Jako nastolatek lubiłem modować gry, przerabiać tekstury, tworzyć grafiki i filmy oraz 
-            upiększać programy i systemy operacyjne. Ukończyłem Technikum w Sosnowcu i zdobyłem kwalifikację 
-            Fototechnika, który pozwala mi na wykonywanie zawodu w dziedzinie Fotografii, grafiki oraz 
-            projektowania prostych stron WWW. Jednak było to dla mnie za mało. Kiedy mogłoby się wydawać, 
-            że artystyczne kierunki gdzie dominuje abstrakcyjny typ myślenia nie mogą iść w parze z 
-            programowaniem wymagającym logicznego rozumowania - stwierdziłem, że postaram się je złączyć razem. 
-            W ten oto sposób zostałem front-end developerem, który z pasją tworzy strony i aplikacje zawierające 
-            interfejsy piękne a zarazem w pełni funkcjonalne. Chcąc zamienić swoją pracę w możliwość zarobku, 
-            zacząłem od filmowania meczów Zagłębia Sosnowiec dla firmy InStat Football, a później tworzyłem w 
-            ramach pojedynczych zleceń grafiki, zdjęcia i aplikacje internetowe dla różnych firm jako freelancer. 
-            Owoce mojej pracy możesz zobaczyć w zakładce “Projekty”. Prócz mojej artystyczno-programistycznej 
-            działalności, interesuję się również rozwojem osobistym dlatego każdego dnia, staram się poświęcić 
-            czas na rozwój umiejętności miękkich tj. zarządzanie czasem, panowanie nad emocjami, praca w zespole 
-            czy strategiczne myślenie. Obecnie poszukuje nowych wyzwań, dlatego mogę podjąć pracę stacjonarną w 
-            Sosnowcu, Bedzinie, Katowicach i Dąbrowie Górniczej lub zdalnie. Jeżeli jesteś zainteresowany 
-            współpracą ze mną, możesz do mnie napisać klikając w zakładkę “Napisz do mnie” lub na adres: 
-            kkbugajak@gmail.com  :) </p>
+        <p>IT and media had been my passion since i was very young. As a teenager i loved modding video games, making graphics/films and making OSs more beautiful. I finished Technic High School, obtaining the Photo and Media engineer title in the same time, which allows me to work with media projects such as Graphic&UX&UI Designing, making professional photos and creating web apps. I do my work with huge determination, passion and positive attitude. I appreciate working with team. My main and representative advantages are innovative way of creating interfaces and well-educated soft skills. If you want to text me a message, you can do that by e-mail: kkbugajak@gmail.com or by “Text Me” section :)    </p>
         </div>`;
         }
 

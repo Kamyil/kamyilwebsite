@@ -27,7 +27,7 @@
       font-size: 1.4em; }
   .acrylic::before {
     background: url("../img/bg.jpg") center center;
-    background-size: 100vw 95vh;
+    background-size: 100vw 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-filter: blur(15px);
@@ -41,7 +41,7 @@
     z-index: -1; }
   .acrylic-dark::before {
     background: url("../img/bg-dark.jpg") center center;
-    background-size: 100vw auto;
+    background-size: 100vw 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-filter: blur(15px);
@@ -53,18 +53,36 @@
     width: calc(100% + 20px);
     height: calc(100% + 20px);
     z-index: -1; } }
-
-@media only screen and (min-width: 320px) and (max-width: 548px) {
+   
+@media only screen and (min-width: 320px) and (max-width: 360px) {
   #left-bar-container {
-    width: 57vw; }
+    width: 34vw; }
+    #left-bar-container .light-bg-h2,#left-bar-container .dark-bg-h2{
+      font-size: 100%;
+      width: 120%;
+      
+    }
     #left-bar-container img {
       top: 12%; }
   #viewToggler {
     left: 44vw;
-    bottom: 10vh; }
+    bottom: 1vh; }
   #right-bar-container {
     display: none; } }
-
+    @media only screen and (min-width: 360px) and (max-width: 540px) {
+      #left-bar-container {
+        width: 53vw; }
+    }
+    @media only screen and (min-width: 540px) and (max-width: 710px) {
+      #right-bar-container {
+        display: none; }
+        #left-bar-container {
+          width: 59vw; }
+          #viewToggler{
+            bottom: 90vh;
+            left: 5vw;
+          }
+    }
 @media only screen and (min-width: 670px) and (max-width: 710px) {
   #left-bar-container {
     width: 65vw; }
