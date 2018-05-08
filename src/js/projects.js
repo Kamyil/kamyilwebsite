@@ -232,7 +232,7 @@ textMeBtn.addEventListener('click',callTextMe);
 
     <div class="project acrylic-dark medium-high shadow fade-in-from-top">
     
-    <img src="img/fotobrom-screen.png" class="shadow" alt=""></img>
+    <img src="src/img/fotobrom-screen.png" class="shadow" alt=""></img>
     <a href="http://www.fotobrom.pl" target="_blank" class="go-to-website">Go!</a>
     <h2>FotoBrom</h2>  
     <p>Fotobrom official website. Technologies used: Bootstrap, JQuery</p>
@@ -240,7 +240,7 @@ textMeBtn.addEventListener('click',callTextMe);
 
     <div class="project acrylic-dark medium-high shadow fade-in-from-top">
     
-    <img src="img/kamyilos.png" class="shadow" alt=""></img>
+    <img src="src/img/kamyilos.png" class="shadow" alt=""></img>
     <a href="https://github.com/Kamyil/KamyilOS" target="_blank"><i class="devicon-github-plain"></i></a>
 
     <h2>KamyilOS</h2>  
@@ -251,7 +251,7 @@ textMeBtn.addEventListener('click',callTextMe);
 
     <div class="project acrylic-dark medium-high shadow fade-in-from-top">
     
-    <img src="img/invo.png" class="shadow" alt=""></img>
+    <img src="src/img/invo.png" class="shadow" alt=""></img>
     <a href="https://github.com/Kamyil/invo" target="_blank"><i class="devicon-github-plain"></i></a>
 
     <h2>Invoker</h2>  
@@ -263,7 +263,7 @@ textMeBtn.addEventListener('click',callTextMe);
 
     <div class="project acrylic-dark medium-high shadow fade-in-from-top">
     
-    <img src="img/pomieszczeniometr.png" class="shadow" alt=""></img>
+    <img src="src/img/pomieszczeniometr.png" class="shadow" alt=""></img>
     <a href="https://github.com/Kamyil/Pomieszczeniometr" target="_blank"><i class="devicon-github-plain"></i></a>
 
     <h2>Room-O-Meter</h2>  
