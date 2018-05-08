@@ -66,7 +66,7 @@ function callProjects() {
     
         <div class="project acrylic-dark medium-high shadow fade-in-from-top">
         
-        <img src="img/kamyilos.png" class="shadow" alt=""></img>
+        <img src="src/img/kamyilos.png" class="shadow" alt=""></img>
         <a href="https://github.com/Kamyil/KamyilOS" target="_blank"><i class="devicon-github-plain"></i></a>
     
         <h2>KamyilOS</h2>  
