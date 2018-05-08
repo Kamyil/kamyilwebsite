@@ -7,12 +7,12 @@ hide_btn.addEventListener('click',toggleView);
 
 function toggleView(){
 
-    if(left_container.style.display&&right_container.style.display == "block"){
-        left_container.style.display = "none";
+    if(left_container.style.opacity&&right_container.style.opacity == "1"){
+        left_container.style.opacity = "0";
         left_container.classList.add = "fade-out";
         left_container.classList.remove = "fade-in";
 
-        right_container.style.display = "none";
+        right_container.style.opacity = "0";
         right_container.classList.add = "fade-out";
         right_container.classList.remove = "fade-in";
 
@@ -20,11 +20,11 @@ function toggleView(){
         hide_btn.textContent = "Show";
     }
     else{
-        left_container.style.display = "block";
+        left_container.style.opacity = "1";
         left_container.classList.add = "fade-in";
         left_container.classList.remove = "fade-out";
 
-        right_container.style.display = "block";
+        right_container.style.opacity = "1";
         right_container.classList.add = "fade-in";
         right_container.classList.remove = "fade-out";
 

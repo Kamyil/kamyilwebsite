@@ -6,6 +6,7 @@ let h2 = document.querySelectorAll('.light-bg-h2');
 let themeToggler = document.querySelector('#light-mode');
 let togglerBtn = document.querySelector('#light-mode');
 let bg = document.querySelector('.light-bg');
+
 function toggleModes(){
    
 // console.log(mediumsToToggleModes);
@@ -19,11 +20,11 @@ hide_btn.classList.toggle('dark-bg-toggler');
 themeToggler.classList.toggle('light-bg-toggler');
 themeToggler.classList.toggle('dark-bg-toggler');
 
-if(togglerBtn.textContent.includes("Ciemny Motyw")){
-    togglerBtn.textContent = "Jasny Motyw";
+if(togglerBtn.textContent.includes("Night Mode")){
+    togglerBtn.textContent = "Light Mode";
 }
-else if(togglerBtn.textContent.includes("Jasny Motyw")){
-    togglerBtn.textContent = "Ciemny Motyw";
+else if(togglerBtn.textContent.includes("Light Mode")){
+    togglerBtn.textContent = "Night Mode";
 }
 
 

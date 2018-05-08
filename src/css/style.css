@@ -111,20 +111,23 @@
     -webkit-transition-duration: 0.15s;
          -o-transition-duration: 0.15s;
             transition-duration: 0.15s; }
+  #left-bar-container img {
+    width: 35%;
+    top: 13%;
+    left: 50%;
+    /* position the left edge of the element at the middle of the parent */
+    -webkit-transform: translate(-45%, -50%);
+        -ms-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+    position: absolute; }
 
 #right-bar-container {
-  width: 51vw;
+  width: 50vw;
   height: 80vh;
-  margin-left: 2vw;
+  margin-right: 3vw;
   margin-top: 3vh;
-  float: left;
+  float: right;
   text-align: center; }
-  #right-bar-container #skills-scrollable-left-bar {
-    position: absolute;
-    top: 0vh;
-    left: 0;
-    width: 10vw;
-    height: 100%; }
   #right-bar-container h1 {
     text-align: center;
     font-size: 3em;
@@ -144,12 +147,12 @@
     position: relative;
     bottom: 0.3%; }
   #right-bar-container .webdev {
-    width: 30%; }
+    width: 12vw; }
   #right-bar-container .graphic {
-    width: 30%;
+    width: 10vw;
     position: relative;
-    bottom: 87.5vh;
-    left: 55%; }
+    bottom: 90vh;
+    left: 30vw; }
   #right-bar-container li {
     font-weight: 700;
     list-style-type: none;
@@ -229,18 +232,6 @@ form {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-input[type=file] {
-  display: none; }
-
-.custom-file-upload {
-  border: 1px solid #ccc;
-  margin-top: 10%;
-  background-color: rgba(250, 250, 250, 0.9);
-  display: inline-block;
-  padding: 12px;
-  cursor: pointer;
-  font-weight: 700; }
-
 .text-me {
   height: 60vh; }
   .text-me form {
@@ -302,6 +293,9 @@ input[type=file] {
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s; }
 
+.back {
+  font-weight: 700; }
+
 /* ACRYLIC BLURRED MATERIAL WITH SHADOW INCLUDED */
 .acrylic {
   padding: 4em 6em;
@@ -313,6 +307,7 @@ input[type=file] {
   background: url("../img/bg.jpg") center center;
   background-size: 100vw auto;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   -webkit-filter: blur(15px);
           filter: blur(15px);
   content: "";
@@ -339,6 +334,7 @@ input[type=file] {
   background: url("../img/bg-dark.jpg") center center;
   background-size: 100vw auto;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   -webkit-filter: blur(15px);
           filter: blur(15px);
   content: "";

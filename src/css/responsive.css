@@ -1,0 +1,216 @@
+@media only screen and (max-width: 1000px) {
+  .back {
+    position: absolute;
+    right: 3vw;
+    top: 3vh; }
+  #left-bar-container {
+    width: 62vw;
+    position: relative;
+    height: 80vh;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; }
+    #left-bar-container h1 {
+      margin-top: 45%; }
+    #left-bar-container button {
+      font-size: 100%;
+      width: 100%;
+      margin: 3% auto; }
+    #left-bar-container img {
+      top: 15%; }
+    #left-bar-container .bio-title, #left-bar-container .projects-title, #left-bar-container .skills-title, #left-bar-container .textMe-title {
+      margin-top: -5vh; }
+    #left-bar-container li {
+      list-style-type: none;
+      margin-top: 3%;
+      font-size: 1.3em; }
+    #left-bar-container i {
+      font-size: 1.4em; }
+  .acrylic::before {
+    background: url("../img/bg.jpg") center center;
+    background-size: 100vw 95vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    z-index: -1; }
+  .acrylic-dark::before {
+    background: url("../img/bg-dark.jpg") center center;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    z-index: -1; } }
+
+@media only screen and (min-width: 320px) and (max-width: 548px) {
+  #left-bar-container {
+    width: 57vw; }
+    #left-bar-container img {
+      top: 12%; }
+  #viewToggler {
+    left: 44vw;
+    bottom: 10vh; } }
+
+@media only screen and (min-width: 670px) and (max-width: 710px) {
+  #left-bar-container {
+    width: 65vw; }
+    #left-bar-container button {
+      font-size: 90%;
+      width: 100%;
+      margin: 2% auto;
+      padding: 4%; }
+  .bio-content p {
+    font-size: 105%;
+    font-weight: 700; }
+  #viewToggler {
+    left: 45vw; } }
+
+@media only screen and (min-width: 710px) and (max-width: 820px) {
+  #left-bar-container {
+    width: 67vw; }
+    #left-bar-container button {
+      font-size: 90%;
+      width: 100%;
+      margin: 1% auto;
+      padding: 4%; }
+  #viewToggler {
+    left: 10vw;
+    bottom: 90vh; } }
+
+@media only screen and (min-width: 820px) and (max-width: 1000px) {
+  #left-bar-container {
+    width: 75vw; }
+    #left-bar-container h1 {
+      margin-top: 42%; }
+    #left-bar-container button {
+      font-size: 90%;
+      width: 100%;
+      margin: 1% auto;
+      padding: 2%; }
+    #left-bar-container img {
+      top: 20%; }
+  #viewToggler {
+    left: 10vw;
+    bottom: 90vh; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+  #left-bar-container {
+    width: 14vw; }
+    #left-bar-container h1 {
+      margin-top: 65%;
+      width: 300%;
+      margin-left: -13.5vw;
+      font-size: 250%; }
+    #left-bar-container .light-bg-h2, #left-bar-container .dark-bg-h2 {
+      width: 150%;
+      margin-left: -3vw; }
+    #left-bar-container button {
+      font-size: 120%;
+      width: 220%;
+      margin: 10% -60%;
+      padding: 10%; }
+    #left-bar-container img {
+      top: 10%; }
+  #right-bar-container {
+    display: block;
+    width: 40vw; }
+    #right-bar-container .bio-content {
+      margin: 0 auto;
+      right: 1vw; }
+    #right-bar-container .webdev {
+      left: -8vw; }
+    #right-bar-container .graphic {
+      bottom: 86vh;
+      left: 22vw; }
+    #right-bar-container .project {
+      width: 100%;
+      right: 9vw; }
+  #viewToggler {
+    left: 15vw;
+    bottom: 5vh; } }
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+  #left-bar-container {
+    width: 16vw; }
+    #left-bar-container h1 {
+      margin-top: 50%;
+      width: 170%;
+      margin-left: -5vw; }
+    #left-bar-container .light-bg-h2, #left-bar-container .dark-bg-h2 {
+      width: 150%;
+      margin-left: -3vw; }
+    #left-bar-container button {
+      font-size: 120%;
+      width: 220%;
+      margin: 7% -60%;
+      padding: 10%; }
+    #left-bar-container img {
+      top: 9%; }
+  #right-bar-container {
+    display: block;
+    width: 41vw; }
+    #right-bar-container .bio-content {
+      margin: 0 auto;
+      right: 1.6vw; }
+    #right-bar-container .webdev {
+      left: -8vw; }
+    #right-bar-container .graphic {
+      bottom: 86vh;
+      left: 22vw; }
+    #right-bar-container .project {
+      width: 100%;
+      right: 9vw; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1670px) {
+  #left-bar-container {
+    width: 19vw; }
+    #left-bar-container h1 {
+      margin-top: 50%;
+      width: 170%;
+      margin-left: -6vw; }
+    #left-bar-container .light-bg-h2, #left-bar-container .dark-bg-h2 {
+      width: 150%;
+      margin-left: -4vw; }
+    #left-bar-container button {
+      font-size: 120%;
+      width: 200%;
+      margin: 3% -60%;
+      padding: 6%; }
+    #left-bar-container img {
+      top: 11%; }
+  #right-bar-container {
+    display: block;
+    width: 43vw; }
+    #right-bar-container .bio-content {
+      margin: 0 auto;
+      right: 1.6vw; }
+    #right-bar-container .webdev {
+      left: -8vw; }
+    #right-bar-container .graphic {
+      bottom: 86vh;
+      left: 22vw; }
+    #right-bar-container .project {
+      width: 100%;
+      right: 9vw; }
+  #viewToggler {
+    bottom: 7vh; } }
+
+@media only screen and (min-width: 1670px) and (max-width: 1920px) {
+  #left-bar-container button {
+    width: 175%; }
+  .graphic {
+    margin-top: 11vh; }
+  #viewToggler {
+    bottom: 7vh; } }
