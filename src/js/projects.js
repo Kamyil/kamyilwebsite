@@ -135,7 +135,7 @@ textMeBtn.addEventListener('click',callTextMe);
 
                 } else {
                     left_container.innerHTML = `
-        <img src="img/kamil_prof_linkedIn.png" alt="Kamil Bugajak's profile picture.">
+        <img src="src/img/kamil_prof_linkedIn.png" alt="Kamil Bugajak's profile picture.">
         <h1>Kamil Bugajak</h1>
         <h2 class="light-bg-h2">front-end developer</h2>
         <h2 class="light-bg-h2">graphic designer</h2>
