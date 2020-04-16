@@ -29,6 +29,7 @@ export const Grid = (() => {
         square.addEventListener('click', (e) => {
             Square.mark(e);
             Counter.updateMarkedSquaresValue();
+            Counter.handleAllAxisesChange();
         });
     })
     }

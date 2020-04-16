@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minecraft Planner</title>
     <link rel="stylesheet" href="/public/build/css/style.css">
 
 </head>
@@ -17,8 +17,6 @@
     </div>
 
     <div class="toolbox">
-
-
         <form>
             <label for="grid-width">Szerokość</label>
             <input id="grid-width" type="number">
@@ -31,8 +29,12 @@
     </div>
 
     <div class="counter">
-        <b>Zaznaczonych:</b>
-        <div class="counterValue">0</div>
+        <div><b>Zaznaczonych:</b></div>
+        <b class="counterValue">&nbsp;0&nbsp;</b>
+        Łącznie z wysokością bloków rowną
+        <input type="number" name="house-height" id="house-height" value="1">
+        <div>wychodzi...<b class="counterXYZValue">&nbsp;0</b></div>
+         
     </div>
 
     <script src="public/build/js/bundle.js"></script>

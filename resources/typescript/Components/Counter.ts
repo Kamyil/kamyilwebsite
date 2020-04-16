@@ -4,19 +4,36 @@ import { $ } from '../utils';
 export const Counter = (() => {
 
     const Selector = {
-        COUNTER_VALUE: '.counterValue'
+        COUNTER_VALUE: '.counterValue',
+        Y_AXIS_VALUE: '#house-height',
+        ALL_AXISES_COUNTER_VALUE: '.counterXYZValue',
     }
 
-    // onClick();
+
+    $(Selector.Y_AXIS_VALUE).addEventListener('input', () => {
+        Counter.updateMarkedSquaresValue();
+        Counter.handleAllAxisesChange();
+    });
 
     function updateMarkedSquaresValue() {
-        const amount = Grid.countMarkedSquares();
+        let amount = Grid.countMarkedSquares();
+        
 
         $(Selector.COUNTER_VALUE).textContent = String(amount);
     }
 
+    function handleAllAxisesChange() {
+        let amount = Grid.countMarkedSquares();
+        const YaxisValue: number = parseInt(($(Selector.Y_AXIS_VALUE) as HTMLInputElement).value);
+
+        amount = amount * YaxisValue;
+
+        $(Selector.ALL_AXISES_COUNTER_VALUE).innerHTML = String(amount);
+    }
+
     return {
-        updateMarkedSquaresValue
+        updateMarkedSquaresValue,
+        handleAllAxisesChange
     }
 
 })();

@@ -1,7 +1,21 @@
 .toolbox {
   position: fixed;
   right: 10px;
-  bottom: 10px; }
+  bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+#house-height {
+  width: 32px;
+  border: 1px solid black;
+  background-color: transparent;
+  text-align: center;
+  height: 32px; }
 
 /* * {
     margin: 0;
@@ -41,9 +55,17 @@ body {
 
 .counter {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 350px;
   right: 10px;
   top: 10px;
   font-family: 'Arial';
-  font-size: 24px; }
+  font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map*/
