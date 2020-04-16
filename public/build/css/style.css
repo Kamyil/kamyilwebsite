@@ -27,7 +27,22 @@
     height: 32px;
     color: white;
     text-align: center;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-right: 20px; }
+  .toolbox form button {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 128px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 14px; }
+    .toolbox form button:hover {
+      background-color: #fff;
+      color: black;
+      -webkit-transition-duration: .25s;
+      transition-duration: .25s; }
 
 #house-height {
   width: 32px;

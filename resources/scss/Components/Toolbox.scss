@@ -21,6 +21,24 @@
             color: white;
             text-align: center;
             font-size: 18px;
+            margin-right: 20px;
+        }
+
+        button {
+            background-color: transparent;
+            cursor: pointer;
+            border: 1px solid white;
+            width: 128px;
+            height: 40px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #fff;
+                color: black;
+                transition-duration: .25s;
+            }
         }
     }
 }
