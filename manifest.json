@@ -1,0 +1,16 @@
+{
+    "name": "Fundamenty",
+    "short_name": "Fundamenty",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#66A73A",
+    "description": "A demo app for a fictional conference",
+    "theme_color": "#986C49",
+    "icons": [
+      {
+        "src": "./icon.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
+    ]
+  }

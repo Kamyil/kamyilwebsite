@@ -1,63 +1,41 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="--gridWidth: 32; --gridHeight: 32;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
-    <meta name="description" content="Kamil 'Kamyil' Bugajak Official Portfolio Website">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <title>Kamil "Kamyil" Bugajak</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/build/css/style.css">
+
 </head>
-<body class="light-bg">
-    <main>
-  
-<!-- <p style="color: red; position: absolute; top: 0; left: auto; right: auto;">*keep in mind that this website is still demo. Need to fix responsibility. Official release will be in 10th May*</p> -->
-        <div id="left-bar-container" class="acrylic shadow fade-in" style="opacity: 1">
 
-            <img src="src/img/kamil_prof_linkedIn.png" alt="Kamil Bugajak's profile picture.">
-            <h1>Kamil Bugajak</h1>
-            <h2 class="light-bg-h2">front-end developer</h2>
-            <h2 class="light-bg-h2">graphic designer</h2>
-            <h2 class="light-bg-h2">UI/UX designer</h2>
-            <h2 class="light-bg-h2">photographer</h2>
-
-            <button class="light-btn" id="bio-btn">Bio <span>></span></button>
-            <button class="light-btn" id="skills-btn">Skills <span>></span></button>
-            <button class="light-btn" id="projects-btn">Projects<span>></span></button>
-            <button class="light-btn" id="text-me-btn">Text me<span>></span></button>
-
-            <button id="light-mode" class="light-bg-toggler">Night Mode</button>
-            
-        
-             
-          
-
+<body>
+    <div class="container">
+        <div class="grid">
+            <!-- Here will be generated squares via JavaScript -->
         </div>
-        <button class="interface-show light-bg-toggler" id="viewToggler"> Hide </button>   
+    </div>
+
+    <div class="toolbox">
 
 
-        <div id="right-bar-container" class="acrylic shadow fade-in">
+        <form>
+            <label for="grid-width">Szerokość</label>
+            <input id="grid-width" type="number">
 
+            <label for="grid-height">Wysokość</label>
+            <input id="grid-height" type="number">
 
-            
-      
-        </div>
-  
- 
-      </main>
-      <script src="src/js/lessThan1000.js"></script>
-      <script src="src/js/dark-mode.js"></script>
-      <script src="src/js/bio.js"></script>
-      <script src="src/js/skills.js"></script>
-      <script src="src/js/change-bg.js"></script>
-      <script src="src/js/projects.js"></script>
-      <script src="src/js/textme.js"></script>
+            <button id="rerender-btn" type="button">Renderuj</button>
+        </form>
+    </div>
 
+    <div class="counter">
+        <b>Zaznaczonych:</b>
+        <div class="counterValue">0</div>
+    </div>
 
+    <script src="public/build/js/bundle.js"></script>
 </body>
+
 </html>
