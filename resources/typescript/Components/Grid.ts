@@ -1,70 +1,72 @@
-import { Square } from 'Components/Square';
-import { Counter } from 'Components/Counter';
-import { Toolbox } from 'Components/Toolbox';
-import { $, $All, onClick } from '../utils';
-
+import { Square } from "Components/Square";
+import { Counter } from "Components/Counter";
+import { Toolbox } from "Components/Toolbox";
+import { $, $All, onClick } from "../utils";
 
 export const Grid = (() => {
+  const Selector = {
+    GRID: ".grid",
+    SQUARE: {
+      DEFAULT: ".square",
+      MARKED: ".square.marked",
+    },
+    RERENDER_BTN: "#rerender-btn",
+    CLEAR_GRID_BTN: "#clear-grid-btn",
+  };
 
-    const Selector = {
-        GRID: '.grid',
-        SQUARE: {
-            DEFAULT: '.square',
-            MARKED: '.square.marked'   
-        },
-        RERENDER_BTN: '#rerender-btn'
+  onClick(Selector.RERENDER_BTN, rerender);
+  onClick(Selector.CLEAR_GRID_BTN, clear);
+
+  function render(width: number = 32, height: number = 32) {
+    const amountOfSquaresToRender = width * height;
+
+    for (let i = 1; i <= amountOfSquaresToRender; i++) {
+      Square.create();
     }
 
-    onClick(Selector.RERENDER_BTN, rerender);
+    // Zapnij zaznaczanie po kliknieciu
+    $All(Selector.SQUARE.DEFAULT).forEach((square) => {
+      square.addEventListener("click", (e) => {
+        Square.mark(e);
+        Counter.updateMarkedSquaresValue();
+        Counter.handleAllAxisesChange();
+      });
+    });
+  }
 
-    function render(width: number = 32, height: number = 32) {
-        const amountOfSquaresToRender = width * height;
+  function rerender() {
+    const { width, height } = Toolbox.getNewGridDimensions();
 
-        for (let i = 1; i <= amountOfSquaresToRender; i++) {
-            Square.create();
-        }
-
-        // Zapnij zaznaczanie po kliknieciu
-        $All(Selector.SQUARE.DEFAULT).forEach((square) => {
-        square.addEventListener('click', (e) => {
-            Square.mark(e);
-            Counter.updateMarkedSquaresValue();
-            Counter.handleAllAxisesChange();
-        });
-    })
+    if (width >= 64 || width >= 64) {
+      alert("Nie mozna dodac więcej niz 64! Sprobuj mniejsza liczbe");
+      return;
     }
 
-    function rerender() {
-        const { width, height } = Toolbox.getNewGridDimensions();
+    let root = document.documentElement;
 
-        if (width >= 64 || width >= 64) { 
-            alert('Nie mozna dodac więcej niz 64! Sprobuj mniejsza liczbe');
-            return;
-        }
+    root.style.setProperty("--gridWidth", String(width));
+    root.style.setProperty("--gridHeight", String(height));
 
-        let root = document.documentElement;
+    // Clear previous grid before render()
+    $(Selector.GRID).innerHTML = "";
 
-        root.style.setProperty('--gridWidth', String(width));
-        root.style.setProperty('--gridHeight', String(height));
+    render(width, height);
+  }
 
-        // Clear previous grid before render()
-        $(Selector.GRID).innerHTML = '';
+  function countMarkedSquares() {
+    let amount = 0;
+    $All(Selector.SQUARE.MARKED).forEach((el) => amount++);
 
-        render(width, height);
-    }
+    return amount;
+  }
 
+  function clear() {
+      $All(Selector.SQUARE.MARKED).forEach((square) => square.classList.remove('marked'));
+  }
 
-    function countMarkedSquares() {
-        let amount = 0;
-        $All(Selector.SQUARE.MARKED).forEach((el) => amount++);
-
-        return amount;
-    }
-
-    return {
-        render,
-        rerender,
-        countMarkedSquares
-    }
-
+  return {
+    render,
+    rerender,
+    countMarkedSquares,
+  };
 })();
