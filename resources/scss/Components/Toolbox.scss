@@ -11,6 +11,18 @@
     align-items: center;
     justify-content: center;
     float: right;
+
+    form {
+        input {
+            background-color: transparent;
+            border: 1px solid white;
+            width: 64px;
+            height: 32px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
 }
 
 #house-height {
