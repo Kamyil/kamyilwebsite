@@ -8,9 +8,11 @@ export const Square = (() => {
 
     // onClick();
 
-    function create() {
+    function create(id: number = 1) {
         const square = document.createElement('div');
         square.classList.add('square');
+        square.dataset.id = String(id);
+        square.setAttribute('draggable', 'false');
 
         $(Selector.GRID).appendChild(square);
     }
@@ -20,6 +22,7 @@ export const Square = (() => {
             e.target.classList.remove('marked');
         } else {
             e.target.classList.add('marked');
+            // setNumber()
         }
     }
 

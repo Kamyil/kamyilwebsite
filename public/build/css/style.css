@@ -84,9 +84,15 @@ body {
   height: 25px;
   border: 1px solid black;
   cursor: pointer; }
+  .square:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: ease-in-out .05s;
+    transition: ease-in-out .05s; }
 
 .marked {
   background-color: #986C49; }
+  .marked:hover {
+    background-color: #765438; }
 
 .counter {
   position: fixed;

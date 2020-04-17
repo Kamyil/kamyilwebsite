@@ -1,10 +1,13 @@
+@import "variables";
 @import "Components/Toolbox.scss";
+
+
 /* * {
     margin: 0;
     padding: 0;
 } */
 body {
-    background-color: #66A73A;
+    background-color: $primary-color;
     font-family: 'Arial';
 }
 
@@ -31,10 +34,19 @@ body {
     height: 25px;
     border: 1px solid black;
     cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: ease-in-out .05s;
+    }
 }
 
 .marked {
-    background-color: #986C49;
+    background-color: $secondary-color;
+
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+    }
 }
 
 .counter {
